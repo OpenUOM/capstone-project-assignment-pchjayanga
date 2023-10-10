@@ -120,19 +120,24 @@ const readStudentInfo = async (id) => {
     });
 }
 
-const addStudent = async (id, name, age, religion) => {
-    const sql = `SELECT * FROM addstudent`
-    return new Promise((resolve, reject) => {
-        knex_db
-            .raw(sql)
-            .then((data) => {
-                resolve(data);
-            })
-            .catch((error) => {
-                reject(error);
-            });
-    });
-}
+def readStudents():
+
+
+Returns:
+    A Pandas DataFrame containing all student data.
+
+
+sql = `SELECT * FROM dummydata`
+return new Promise((resolve, reject) => {
+    knex_db
+        .raw(sql)
+        .then((data) => {
+            resolve(data);
+        })
+        .catch((error) => {
+            reject(error);
+        });
+});
 
 const updateStudent = async (name, age, religion, id) => {
     const sql = `SELECT * FROM student`

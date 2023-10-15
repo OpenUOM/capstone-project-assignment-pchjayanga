@@ -11,10 +11,10 @@ exports.up = function (knex) {
         table.int("age");
         table.string("hometown", 255);
       })
-      .createTable("dummyData", function (table) {
+      .createTable("addstudent", function (table) {
         table.increments("id").notNullable().primary();
-        table.string("dummyDataOne", 255);
-        table.string("dummyDataTwo", 255);
+        table.string("age", 255);
+        table.string("religion", 255);
       })
   };
   
@@ -22,6 +22,6 @@ exports.up = function (knex) {
     return knex.schema
       .dropTable("teacher")
       .dropTable("student")
-      .dropTable("dummyData")
+      .dropTable("addstudent")
   };
   

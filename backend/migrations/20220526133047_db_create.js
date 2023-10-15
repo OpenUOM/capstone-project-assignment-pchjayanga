@@ -11,10 +11,11 @@ exports.up = function (knex) {
         table.int("age");
         table.string("hometown", 255);
       })
-      .createTable("addstudent", function (table) {
+      .createTable("studentadd", function (table) {
         table.increments("id").notNullable().primary();
+        table.string("name", 255);
         table.string("age", 255);
-        table.string("religion", 255);
+          table.string("religion", 255);
       })
   };
   

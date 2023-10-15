@@ -14,7 +14,7 @@ exports.up = function (knex) {
       .createTable("studentadd", function (table) {
         table.increments("id").notNullable().primary();
         table.string("name", 255);
-        table.string("age", 255);
+        table.int("age", 255);
           table.string("religion", 255);
       })
   };

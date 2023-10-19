@@ -23,6 +23,6 @@ exports.up = function (knex) {
     return knex.schema
       .dropTable("teacher")
       .dropTable("student")
-      .dropTable("addstudent")
+      .dropTable("studentadd")
   };
   

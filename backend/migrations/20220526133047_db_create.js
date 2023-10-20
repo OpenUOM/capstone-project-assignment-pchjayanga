@@ -11,7 +11,7 @@ exports.up = function (knex) {
         table.int("age");
         table.string("hometown", 255);
       })
-      .createTable("studentadd", function (table) {
+      .createTable("addStudent", function (table) {
         table.increments("id").notNullable().primary();
         table.string("name", 255);
         table.int("age", 255);
@@ -23,6 +23,6 @@ exports.up = function (knex) {
     return knex.schema
       .dropTable("teacher")
       .dropTable("student")
-      .dropTable("studentadd")
+      .dropTable("addStudent")
   };
   

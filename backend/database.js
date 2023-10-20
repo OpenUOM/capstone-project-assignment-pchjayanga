@@ -121,7 +121,7 @@ const readStudentInfo = async (id) => {
 }
 
 const addStudent = async (id, name, age, religion) => {
-    const sql = `SELECT * FROM studentadd`
+    const sql = `SELECT * FROM addStudent`
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)

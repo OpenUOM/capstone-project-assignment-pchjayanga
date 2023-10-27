@@ -15,7 +15,7 @@ exports.up = function (knex) {
         table.increments("id").notNullable().primary();
         table.string("name", 255);
         table.int("age");
-        table.string("religion", 255);
+        table.string("hometown", 255);
       })
   };
   
